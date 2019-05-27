@@ -1,0 +1,41 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+body > .container {
+  padding: 60px 15px 0;
+}
+
+.sidebar {
+  background: lightgrey;
+  height: 100%;
+}
+
+/* Tip table */
+.tip-table > thead > tr > th:first-child {
+  text-align: left;
+}
+
+.tip-table > thead > tr > th {
+  text-align: center;
+}
+
+.tip-table > tbody > tr > td:first-child {
+  text-align: left;
+}
+.tip-table > tbody > tr > td {
+  width: 20%;
+  text-align: center;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "soccer-bet",
+  "version": "0.0.1",
+  "author": "Jesus O (@jeop10)",
+  "dependencies": {
+    "express": "^4.17.0",
+    "mysql": "latest",
+    "socket.io": "^2.2.0",
+    "sqlite3": "^4.0.8"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "description": "This is a real-time tipster app for soccer matches, the idea is very simple gather your friends and make unique predictions about the outcome of the game, wait until the game is over and see which was right.",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dustycodecorp/SoccerBet.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dustycodecorp/SoccerBet/issues"
+  },
+  "homepage": "https://github.com/dustycodecorp/SoccerBet#readme"
+}
