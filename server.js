@@ -11,7 +11,8 @@ var matches  = [];
 
 
 app.get("/",function(req,res){
-    res.sendFile(__dirname + '/views/index.html');
+    /*ORIGINE => res.sendFile(__dirname + '/views/index.html');*/
+    res.sendFile(path.join(__dirname, '/views/index.html'));
 });
 
 app.use(express.static(path.join(__dirname, 'public')));
@@ -192,7 +193,16 @@ var delete_prediction = function (prediction, callback) {
   });
 }
 
+/* ORIGINE 
+      I
+      I
+      I
+      V
+http.listen(5000,function(){
+    console.log("SoccerBet is now running, listening on 5000");
+});
+*/
 
-http.listen(3000,function(){
-    console.log("SoccerBet is now running, listening on 3000");
+app.listen(process.env.PORT || 5000, function(){
+  console.log('gazon-pas-maudit is running');
 });
